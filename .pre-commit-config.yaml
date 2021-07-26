@@ -1,0 +1,29 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-yaml
+-   repo: local
+    hooks:
+    -   id: isort
+        name: isort
+        entry: isort scripts
+        language: system
+        pass_filenames: false
+    -   id: black
+        name: black
+        entry: black scripts
+        language: system
+        pass_filenames: false
+    -   id: flake8
+        name: flake8
+        entry: flake8
+        language: python
+        pass_filenames: false
+    -   id: mypy
+        name: mypy
+        entry: mypy --no-site-packages
+        language: system
+        pass_filenames: false

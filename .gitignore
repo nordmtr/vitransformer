@@ -1,4 +1,5 @@
 data/**
+checkpoints/**
 .dmypy.json
 *tensorboard*
 *.zip

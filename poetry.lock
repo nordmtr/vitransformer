@@ -775,6 +775,27 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "lightning-bolts"
+version = "0.3.4"
+description = "PyTorch Lightning Bolts is a community contribution for ML researchers."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+packaging = "*"
+pytorch-lightning = ">=1.1.1"
+torch = ">=1.6"
+torchmetrics = ">=0.2.0"
+
+[package.extras]
+dev = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)", "atari-py (>=0.2.0,<0.3.0)", "box2d-py (>=2.3.0,<2.4.0)", "matplotlib", "wandb", "scipy", "codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov (>2.10)", "flake8", "check-manifest", "twine (>=3.2)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy (>=0.790)", "yapf (>=0.29.0)", "atari-py (==0.2.6)"]
+extra = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)", "atari-py (>=0.2.0,<0.3.0)", "box2d-py (>=2.3.0,<2.4.0)", "matplotlib", "wandb", "scipy"]
+loggers = ["matplotlib", "wandb", "scipy"]
+models = ["torchvision (>=0.7)", "scikit-learn (>=0.23)", "pillow", "opencv-python-headless", "gym (>=0.17.2)", "atari-py (>=0.2.0,<0.3.0)", "box2d-py (>=2.3.0,<2.4.0)"]
+test = ["codecov (>=2.1)", "pytest (>=6.0)", "pytest-cov (>2.10)", "flake8", "check-manifest", "twine (>=3.2)", "isort (>=5.6.4)", "pre-commit (>=1.0)", "mypy (>=0.790)", "yapf (>=0.29.0)", "atari-py (==0.2.6)", "scikit-learn (>=0.23)"]
+
+[[package]]
 name = "lxml"
 version = "4.6.3"
 description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
@@ -1867,7 +1888,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "efe116e9fe716f30494105831b3ae05c137b16a06a4cd8d5646bbdac5737c39b"
+content-hash = "7d561e47a4ed53f6d53613f82be67ffccf32280f84761b6f57068b7f6fbf35da"
 
 [metadata.files]
 absl-py = [
@@ -2338,6 +2359,10 @@ kiwisolver = [
     {file = "kiwisolver-1.3.1-pp36-pypy36_pp73-manylinux2010_x86_64.whl", hash = "sha256:33449715e0101e4d34f64990352bce4095c8bf13bed1b390773fc0a7295967b3"},
     {file = "kiwisolver-1.3.1-pp36-pypy36_pp73-win32.whl", hash = "sha256:401a2e9afa8588589775fe34fc22d918ae839aaaf0c0e96441c0fdbce6d8ebe6"},
     {file = "kiwisolver-1.3.1.tar.gz", hash = "sha256:950a199911a8d94683a6b10321f9345d5a3a8433ec58b217ace979e18f16e248"},
+]
+lightning-bolts = [
+    {file = "lightning-bolts-0.3.4.tar.gz", hash = "sha256:72b9c5fcc17ff85f76e27654c51951d837143ae930bbeae3e0c8880f9e7f4c5c"},
+    {file = "lightning_bolts-0.3.4-py3-none-any.whl", hash = "sha256:c5cbeb358a8d09c3bd912cd8fffdf3b435c5ac4516d6dae84a9ea3229facf39f"},
 ]
 lxml = [
     {file = "lxml-4.6.3-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:df7c53783a46febb0e70f6b05df2ba104610f2fb0d27023409734a3ecbb78fb2"},

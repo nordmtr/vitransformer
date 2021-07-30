@@ -1888,7 +1888,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "7d561e47a4ed53f6d53613f82be67ffccf32280f84761b6f57068b7f6fbf35da"
+content-hash = "1632f935bf4d53a0debbb82d8b3e0a1318a3aaa50a10d0e7ef22759ea9ba28b9"
 
 [metadata.files]
 absl-py = [

@@ -20,6 +20,7 @@ torchvision = "^0.10.0"
 albumentations = "^1.0.3"
 scikit-learn = "^0.24.2"
 lightning-bolts = "^0.3.4"
+torchmetrics = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

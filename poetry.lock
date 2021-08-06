@@ -1691,6 +1691,25 @@ numpy = ">=1.15.1"
 all = ["imagecodecs (>=2021.4.28)", "matplotlib (>=3.2)", "lxml"]
 
 [[package]]
+name = "timm"
+version = "0.4.13"
+description = "(Unofficial) PyTorch Image Models"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+develop = false
+
+[package.dependencies]
+torch = ">=1.4"
+torchvision = "*"
+
+[package.source]
+type = "git"
+url = "https://github.com/rwightman/pytorch-image-models.git"
+reference = "master"
+resolved_reference = "bd5694667625d510e3aa89e95397de97d0e7efe9"
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -1888,7 +1907,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.10"
-content-hash = "1632f935bf4d53a0debbb82d8b3e0a1318a3aaa50a10d0e7ef22759ea9ba28b9"
+content-hash = "0cefb749f4f45705c318bae27104e4ae94fd47204dc45a657be04f1ab1a52024"
 
 [metadata.files]
 absl-py = [
@@ -3171,6 +3190,7 @@ tifffile = [
     {file = "tifffile-2021.7.2-py3-none-any.whl", hash = "sha256:3025eaecf3c188ebb9c82e6476da9d8e712630e972f00ea38e054351928e56cc"},
     {file = "tifffile-2021.7.2.tar.gz", hash = "sha256:17fc5ca901f7d7b827a16e4695668e6120319324efe6d1333258397d8a71dedb"},
 ]
+timm = []
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},

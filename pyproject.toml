@@ -33,6 +33,7 @@ mypy = "^0.910"
 pre-commit = "^2.13.0"
 poethepoet = "^0.10.0"
 jupyter-contrib-nbextensions = "^0.5.1"
+autoflake = "^1.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
